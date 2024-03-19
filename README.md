@@ -27,15 +27,15 @@ This component renders the main interface of the counter application. It include
 
 ## Logic
 
+- **handleAddClicked**: Increments the count by the current step value when the "+" button is clicked.
+
+- **handleSubClicked**: Decrements the count by the current step value when the "-" button is clicked.
+
+- **handleReset**: Resets the count to 0 and the step value to 1 when the "Reset" button is clicked.
+
+- **handleStep**: Updates the step value based on user input in the custom step input field. If the input is empty or less than 1, it defaults the step value to 1.
+
 ![picture alt](./src/img/ct2.png "logic")
-
-- handleAddClicked: Increments the count by the current step value when the "+" button is clicked.
-
-- handleSubClicked: Decrements the count by the current step value when the "-" button is clicked.
-
-- handleReset: Resets the count to 0 and the step value to 1 when the "Reset" button is clicked.
-
-- handleStep: Updates the step value based on user input in the custom step input field. If the input is empty or less than 1, it defaults the step value to 1.
 
 ## Screenshots
 
