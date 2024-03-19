@@ -23,13 +23,20 @@ function Counter() {
   }
 
   function handleStep(event) {
-    const mul = parseInt(event.target.value);
-    setStep(mul);
+    const st = event.target.value;
+    if (st === "" || parseInt(st) < 1) {
+      setStep(1);
+    } else setStep(parseInt(st));
   }
 
   return (
     <div className="mainbox">
       <label className="display">{count}</label>
+      <div className="step">
+        <label>Custom step</label>
+        <input type="number" value={step} onChange={handleStep} />
+        <label className="disp">increase/decrease by {step}</label>
+      </div>
       <div className="button-row">
         <button className="btn" onClick={handleAddClicked}>
           +
@@ -37,11 +44,6 @@ function Counter() {
         <button className="btn" onClick={handleSubClicked}>
           -
         </button>
-      </div>
-      <div className="step">
-        <label>Custom step</label>
-        <br />
-        <input type="number" value={step} onChange={handleStep} />
       </div>
       <div>
         <button className="reset-button" onClick={handleReset}>

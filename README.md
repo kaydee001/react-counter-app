@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Counter App - React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple React application consisting of a single component called Counter. The component utilizes React hooks, specifically useState, to manage its state and update the count based on user interactions.
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+To use the Counter component in your React application, follow these steps:
 
-### `npm start`
+- Clone or download the repository containing the Counter component code.
+- Copy the App.js file into your project directory.
+- Import the Counter component into your desired React component file.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## State Management
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **count**: Represents the current count value displayed in the UI. It starts at 0 and can be incremented or decremented.
+- **step**: Represents the custom step value for incrementing or decrementing the count. Its default value is 1.
 
-### `npm test`
+![picture alt](./src/img/ct1.png "state")
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Component
 
-### `npm run build`
+The application contains a single functional component: **Counter**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This component renders the main interface of the counter application. It includes labels for the count and custom step, input fields for adjusting the step value, buttons for incrementing and decrementing the count, and a reset button to restore the count to its default state.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![picture alt](./src/img/ct3.png "component")
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Logic
 
-### `npm run eject`
+![picture alt](./src/img/ct2.png "logic")
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- handleAddClicked: Increments the count by the current step value when the "+" button is clicked.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- handleSubClicked: Decrements the count by the current step value when the "-" button is clicked.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- handleReset: Resets the count to 0 and the step value to 1 when the "Reset" button is clicked.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- handleStep: Updates the step value based on user input in the custom step input field. If the input is empty or less than 1, it defaults the step value to 1.
 
-## Learn More
+## Screenshots
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Initial Look:
+  ![picture alt](./src/img/ct4.png "default")
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Using + and - Buttons:
+  ![picture alt](./src/img/ct5.png "increment/decrement")
 
-### Code Splitting
+- Using Custom Step:
+  ![picture alt](./src/img/ct6.png "step")
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- On Reset:
+  ![picture alt](./src/img/ct7.png "reset")
 
-### Analyzing the Bundle Size
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+If you encounter any issues or have suggestions for improvements, feel free to open an issue or submit a pull request on the GitHub repository.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This README provides a basic overview of the Accordion component, including instructions for usage, customization, contributing, and screenshots demonstrating its functionality. If you have any further questions or need assistance, don't hesitate to ask!
